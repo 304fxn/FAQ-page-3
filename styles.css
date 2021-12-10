@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ccc;
+}
+
+.logo {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Gwendolyn", cursive;
+}
+
+.main .question {
+  width: 40rem;
+  background: #fff;
+  margin: 5% 0;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.main .question .is-closed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .question .is-closed .title-question {
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.main .question .is-closed .plus-btn {
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.main .question .is-closed .plus-btn:hover {
+  opacity: 0.7;
+}
+
+.is-opened {
+  margin-top: 5%;
+  display: none;
+}
+
+.newadd .is-opened {
+  display: block;
+}
+
+.newadd .is-closed .plus-btn {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+/*# sourceMappingURL=styles.css.map */
